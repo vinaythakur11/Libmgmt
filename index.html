@@ -31,3 +31,36 @@
       </select>
 
       <label for="cardID">Card Issuer ID</label>
+      <input type="text" id="cardID" placeholder="Enter Card ID" />
+
+      <button class="primary-btn" onclick="addBook()">Add Record</button>
+      <button class="secondary-btn" onclick="clearForm()">Clear Fields</button>
+    </section>
+
+    <section class="table-section">
+      <div class="action-buttons">
+        <button onclick="deleteBook()">Delete Last Record</button>
+        <button onclick="clearInventory()">Delete All</button>
+      </div>
+
+      <h2>Book Inventory</h2>
+      <table id="inventoryTable">
+        <thead>
+          <tr>
+            <th>Book Name</th>
+            <th>Book ID</th>
+            <th>Author</th>
+            <th>Status</th>
+            <th>Card Issuer ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Book rows appear here -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
